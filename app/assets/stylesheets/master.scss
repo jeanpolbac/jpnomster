@@ -1,5 +1,5 @@
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico');
 
 .booyah-box{
   -webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
@@ -25,6 +25,14 @@ body {
 
 .navbar {
   background: image_url('px_by_Gre3g.png');
-  box-shadow: 0 1px 5px 0 grey;
+  box-shadow: 0 1px 5px 0 #6B6B6B;
+
+}
+
+.navbar-inverse .navbar-brand {
+  color: #AFAFAF;
+  font-family: 'Pacifico', cursive;
+  letter-spacing: +2px; 
+  font-size: 40px;
 
 }
