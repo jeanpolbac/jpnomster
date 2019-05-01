@@ -29,13 +29,31 @@ body {
 
 }
 
-.navbar-inverse .navbar-brand {
+.navbar-inverse {
   color: #AFAFAF;
   font-family: 'Pacifico', cursive;
   letter-spacing: +2px; 
   font-size: 40px;
-
 }
+
+.navbar-brand {
+  color: #AFAFAF;
+  font-family: 'Pacifico';
+  letter-spacing: +2px;
+  font-size: 40px;
+}
+
+a {
+   text-decoration: none;
+   color: #AFAFAF;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #969696;
+}
+
+
 
 .apple_pagination {
   background: #f1f1f1;
@@ -77,3 +95,4 @@ body {
 .apple_pagination a:hover, .apple_pagination a:focus {
   text-decoration: underline;
 }
+
