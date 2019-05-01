@@ -77,3 +77,6 @@ gem 'will_paginate', '~> 3.1.7'
 
 # Integrate bootstrap with pagination
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.2'
+
+# Integrate Simple Form
+gem 'simple_form'
