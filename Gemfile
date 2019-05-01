@@ -83,3 +83,6 @@ gem 'simple_form'
 
 # Integrate Font Awesome
 gem 'font-awesome-rails'
+
+# Integrate Devise for authentication
+gem 'devise'

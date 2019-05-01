@@ -26,11 +26,11 @@ body {
 
 .navbar {
     box-shadow: 0px 1px 5px #6B6B6B;
-    background: image_url('px_by_Gre3g.png')
+    background: image_url('px_by_Gre3g.png'); 
 }
 
 a.navbar-brand {
-    color: #2c2929;
+    color:#aaaaaa; 
     font-family: 'Pacifico', cursive;
     letter-spacing: +2px;
     font-size: 40px;
@@ -77,4 +77,3 @@ a.navbar-brand {
 .apple_pagination a:hover, .apple_pagination a:focus {
   text-decoration: underline;
 }
-
