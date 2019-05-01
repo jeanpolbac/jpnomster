@@ -80,3 +80,6 @@ gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.2'
 
 # Integrate Simple Form
 gem 'simple_form'
+
+# Integrate Font Awesome
+gem 'font-awesome-rails'

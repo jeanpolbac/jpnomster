@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico');
+@import "font-awesome";
 
 .booyah-box{
   -webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
@@ -24,34 +25,18 @@ body {
 }
 
 .navbar {
-  background: image_url('px_by_Gre3g.png');
-  box-shadow: 0 1px 5px 0 #6B6B6B;
+  background: image_url('interlaced.png');
+  box-shadow: 0px 1px 5px #6B6B6B;
 
 }
 
-.navbar-inverse {
-  color: #AFAFAF;
-  font-family: 'Pacifico', cursive;
-  letter-spacing: +2px; 
-  font-size: 40px;
+.navbar-inverse .navbar-brand {
+    color: #2c2929;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: +2px;
+    font-size: 40px;
 }
 
-.navbar-brand {
-  color: #AFAFAF;
-  font-family: 'Pacifico';
-  letter-spacing: +2px;
-  font-size: 40px;
-}
-
-a {
-   text-decoration: none;
-   color: #AFAFAF;
-}
-
-a:hover {
-  text-decoration: none;
-  color: #969696;
-}
 
 
 
