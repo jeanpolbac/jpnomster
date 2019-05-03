@@ -77,3 +77,10 @@ a.navbar-brand {
 .apple_pagination a:hover, .apple_pagination a:focus {
   text-decoration: underline;
 }
+
+.invalid-feedback {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+}
