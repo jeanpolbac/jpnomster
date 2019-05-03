@@ -243,7 +243,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
-  devise
+  devise (~> 4.6, >= 4.6.2)
   font-awesome-rails
   jbuilder (~> 2.5)
   jquery-rails
