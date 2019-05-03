@@ -1,4 +1,4 @@
-<div class="booyah-box col-10 offset-1">
+<div class="booyah-box col-md-6 offset-3">
   <h2>Log in</h2>
   <br />
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -13,7 +13,7 @@
     </div>
     <br />
     <div class="form-actions">
-      <%= f.button :submit, "Log in", class: 'bt btn-primary' %>
+      <%= f.button :submit, "Log in", class: 'bt btn-outline-secondary' %>
     </div>
   <% end %>
   <br />
