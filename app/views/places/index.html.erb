@@ -11,7 +11,7 @@
 <% end %>
 
 
-<div class="apple_pagination">
-  <%= will_paginate @places %>
+<div class="pagination">
+  <%= will_paginate @places, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
 </div>
 
