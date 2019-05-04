@@ -9,9 +9,11 @@
   background:#fff;
   border:1px solid #ccc;
   border-color:#e4e4e4 #bebebd #bebebd #e4e4e4;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 15px;
   padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,24 +39,25 @@ body {
 }
 
 .navbar {
-    box-shadow: 0px 1px 5px #6B6B6B;
-    background: image_url('px_by_Gre3g.png'); 
+  box-shadow: 0px 1px 5px #6B6B6B;
+  background: image_url('px_by_Gre3g.png');
 }
 
-a.navbar-brand {
-   
-    font-family: 'Pacifico', cursive;
-    letter-spacing: +2px;
-    font-size: 40px;
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  letter-spacing: +2px;
+  font-size: 30px;
+  color: #FFFFFF;
 }
 
 
 .pagination {
-  text-align: center;
-  margin: auto;
-  padding-bottom: 10px;
+  justify-content: center;
 }
 
+.page-item.active {
+  background-color: #ADADAD;
+}
 
 .invalid-feedback {
   color: #ff3333;
@@ -63,3 +66,7 @@ a.navbar-brand {
   padding: 2px 8px 2px 8px;
 }
 
+.form-control {
+  width: auto;
+
+}
