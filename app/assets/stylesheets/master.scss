@@ -24,8 +24,12 @@ a:link {
 }
 
 a:hover {
-  color: #969696;
-  text-decoration: none;
+  color: #6D6D6D;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #6D6D6D;
 }
 body {
   background: image_url('lil_fiber.png');
@@ -38,7 +42,7 @@ body {
 }
 
 a.navbar-brand {
-    color:#aaaaaa; 
+   
     font-family: 'Pacifico', cursive;
     letter-spacing: +2px;
     font-size: 40px;
