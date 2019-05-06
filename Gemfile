@@ -86,3 +86,9 @@ gem 'font-awesome-rails'
 
 # Integrate Devise for authentication
 gem 'devise', '~> 4.6', '>= 4.6.2'
+
+# Integrate GeoCoder
+gem 'geocoder'
+
+# Integrate Figaro
+gem 'figaro'
