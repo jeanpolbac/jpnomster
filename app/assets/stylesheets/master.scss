@@ -67,7 +67,8 @@ body {
 }
 
 #map {
-  height: 300px;
+  height: 400px;
+  margin: auto;
 }
 
 .clear {
@@ -93,4 +94,12 @@ blockquote:before {
 
 blockquote p {
   display: inline;
+}
+
+h1.float-left {
+  margin-top: 20px;
+}
+
+#addcomment {
+  margin-top: 20px;
 }
