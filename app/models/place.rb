@@ -1,11 +1,16 @@
 class Place < ApplicationRecord
   belongs_to :user
   has_many :comments
+  has_many :photos
 
   validates :name, length: { minimum: 3, too_short: " - %{count} characters is the minimum allowed" }
   validates :address, presence: true
   validates :description, presence: true
+  validates :caption, length: {minimum: 3, too_short: " - %{count} characters is the minimum allowed"}
+ 
   
   geocoded_by :address
   after_validation :geocode, if: :address_changed?
+
+  
 end

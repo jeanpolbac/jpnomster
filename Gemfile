@@ -92,3 +92,6 @@ gem 'geocoder'
 
 # Integrate Figaro
 gem 'figaro'
+
+# Integrate CarrierWave
+gem 'carrierwave', '~> 1.0'
