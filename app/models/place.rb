@@ -6,7 +6,6 @@ class Place < ApplicationRecord
   validates :name, length: { minimum: 3, too_short: " - %{count} characters is the minimum allowed" }
   validates :address, presence: true
   validates :description, presence: true
-  validates :caption, length: {minimum: 3, too_short: " - %{count} characters is the minimum allowed"}
  
   
   geocoded_by :address

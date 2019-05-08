@@ -129,6 +129,16 @@
   </div>
   <div class="clear"></div>
 
-
+  <div class="row">
+    <% @place.photos.each do |photo| %>
+      <div class="col-12 col-sm-6">
+        <blockquote>
+          <%= image_tag photo.image.url, class:"img-fluid" %>
+          <%= photo.caption %>
+          <small><%= photo.user.email %></small>
+        </blockquote>
+      </div>
+    <% end %>
+  </div>
 
 </div>
