@@ -95,3 +95,6 @@ gem 'figaro'
 
 # Integrate CarrierWave
 gem 'carrierwave', '~> 1.0'
+
+# Integrate Fog AWS
+gem 'fog-aws'
