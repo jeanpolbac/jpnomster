@@ -18,10 +18,16 @@
         </blockquote>
       </div>
     <% end %>
+    <% if place.photos.present? %>
+      <div class="col-12">
+        <blockquote>
+          <%= place.photos.last.image %> -
+          <small><%= place.photos.last.user.email %></small>
+        </blockquote>
+      </div>
+    <% end %>  
   </div>
 <% end %>
-
-
 
 <div class="pagination">
   <%= will_paginate @places, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>

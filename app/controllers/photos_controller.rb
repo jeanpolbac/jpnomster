@@ -8,6 +8,10 @@ class PhotosController < ApplicationController
     redirect_to place_path(@place)
   end
 
+  def index
+     @photos = Photo.all
+  end
+
 
   private
 
