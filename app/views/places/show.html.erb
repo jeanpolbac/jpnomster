@@ -41,14 +41,14 @@
   <div class="floating-right">
     <% if current_user && current_user == @place.user %>
       <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-outline-secondary float-right' %>
-      <button id="addphoto" type="button" class="btn btn-outline-secondary float-right" data-toggle="modal" data-target="#photosModal">
-      Add a photos
-      </button>
-       <button id="addcomment" type="button" class="btn btn-outline-secondary float-right" data-toggle="modal" data-target="#commentsModal">
-      Add a comment
-    </button>
       <%= link_to 'Delete', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this?'},class: 'btn btn-outline-danger' %>
     <% end %>
+    <button id="addphoto" type="button" class="btn btn-outline-secondary float-right" data-toggle="modal" data-target="#photosModal">
+    Add a photo
+    </button>
+    <button id="addcomment" type="button" class="btn btn-outline-secondary float-right" data-toggle="modal" data-target="#commentsModal">
+    Add a comment
+    </button>
     
   </div>
 
