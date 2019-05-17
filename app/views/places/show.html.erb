@@ -5,38 +5,34 @@
   <p><%= @place.description %></p>
 
 
-  </head>
-  <body>
-  <div id="map"></div>
+  
+    <% if @place.latitude.present? && @place.longitude.present? %>
+      <script>
 
-  <% if @place.latitude.present? && @place.longitude.present? %>
+        function initMap() {
+          var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
 
-  <script>
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: myLatLng
+          });
 
-    function initMap() {
-      var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
+          var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+          });
+        }
+      
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqNJM5C4IEBBVZkyw61QUPeALB3lDp_QU&callback=initMap">
+      </script>
 
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 12,
-        center: myLatLng
-      });
+      <div id="map"></div>
+    <% end %>
 
-      var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        title: 'Hello World!'
-      });
-    }
-  </script>
-
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqNJM5C4IEBBVZkyw61QUPeALB3lDp_QU&callback=initMap">
-  </script>
-
- 
-<% end %>
-
-<br />
+    <br />
 
   <div class="floating-right">
     <% if current_user && current_user == @place.user %>
