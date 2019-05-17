@@ -48,6 +48,7 @@ body {
   letter-spacing: +2px;
   font-size: 30px;
   color: #FFFFFF;
+  
 }
 
 
@@ -154,4 +155,15 @@ h1.float-left {
 }
 .navbar .navbar-inverse {
   margin-bottom: 0;
+}
+
+.grey {
+  height: 2px;
+  background-color: #495661;
+  border: none;
+}
+
+#member {
+  margin-top: 25px;
+  padding-right: 20px;
 }

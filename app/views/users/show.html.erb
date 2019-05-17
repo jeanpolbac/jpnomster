@@ -1,18 +1,21 @@
-
 <div class="booyah-box">
   <div class="row">
-    <div class="col-4">
+    <div class="col-4" id='logo'>
       <%= image_tag 'user.png' %>
+      <br /><br />
+      <h2 style="font-size:4vw"><%= @user.email %></h2>
     </div>
-    <div class="col-8">
-      <h2><%= @user.email %></h2>
-      <h3>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
-      <h4><%= @user.comments.count %> total comments</h4>
-      <h4><%= @user.comments.where(rating: '5_stars').count %> total reviews</h4>
+    <div class="col-8 text-right" id='member'>
+      <h3 style="font-size:3vw">Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
+      <hr class="grey" align="right" width="33%"/>
+      <h4 style="font-size:2vw"><%= @user.comments.count %> total comments</h4>
+      <h4 style="font-size:2vw"><%= @user.comments.where(rating: '5_stars').count %> total reviews</h4>
     </div>
   </div>
   <div class="clear"></div>
+ 
 </div>
+
 
 <br /><br />
 <h1 class="text-center">My Comments</h1>
@@ -34,7 +37,7 @@
 <div class="clear"></div>
 
 <br /><br />
-<h2 class="text-center">My places</h2>
+<h1 class="text-center">My places</h1>
 <br /><br />
 <% @user.places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
