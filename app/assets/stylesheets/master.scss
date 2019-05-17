@@ -202,3 +202,10 @@ h1.float-left {
 #alertbanner {
   margin-bottom: 0%;
 }
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #3C3C3C;
+    border-color: #3C3C3C;
+}
