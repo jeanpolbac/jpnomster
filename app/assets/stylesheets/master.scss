@@ -204,8 +204,26 @@ h1.float-left {
 }
 
 .page-item.active .page-link {
-    z-index: 1;
-    color: #fff;
-    background-color: #3C3C3C;
-    border-color: #3C3C3C;
+  z-index: 1;
+  color: #fff;
+  background-color: #3C3C3C;
+  border-color: #3C3C3C;
+}
+
+a.page.link {
+  color: #3C3C3C;
+  background-color: #fff;
+  border-color: #3C3C3C;
+}
+
+#placenameindex {
+  margin-left: 25px;
+}
+
+#placeaddressindex {
+  margin-left: 25px;
+}
+
+#placedescindex {
+  margin-left: 25px;
 }

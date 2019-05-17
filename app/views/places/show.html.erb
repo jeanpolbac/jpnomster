@@ -93,7 +93,6 @@
             <b><%= comment.humanized_rating %></b> -
           <% end %>
           <%= comment.message %>
-          <small><%= comment.user.email %></small>
         </blockquote>
       </div>
     <% end %>
@@ -135,7 +134,6 @@
           <%= image_tag photo.image.url, class:"img-fluid" %>
           <%= photo.caption %>
           <br />
-          <small><%= photo.user.email %></small>
         </blockquote>
       </div>
     <% end %>
