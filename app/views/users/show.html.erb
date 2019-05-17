@@ -11,7 +11,6 @@
     <div class="mr-auto p-2">
       <h5 id="membersince">Member Since:</h5>
     </div>
-    <br />
     <div class="ml-auto p-2">  
       <h5><%= @user.comments.count %> total comments</h5>
     </div>
@@ -34,7 +33,7 @@
 <br /><br />
 <div class="row">
   <% @user.comments.each do |comment| %>
-    <div class="booyah-box col-10 offset-1">
+    <div class="booyah-box col-12 col-sm-6">
         <h2><%= link_to comment.place.name, place_path(comment.place) %></h2>
         <blockquote>
         <% if comment.humanized_rating.present? %>
