@@ -54,8 +54,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
             </button>
             <h4 class="modal-title" id="commentsModalLabel">Add a comment</h4>
           </div>
@@ -65,8 +64,8 @@
               <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+              <%= f.submit "Add a Comment", class: "btn btn-outline-success" %>
             </div>
           <% end %>
         </div>
@@ -97,7 +96,6 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
             </button>
             <h4 class="modal-title" id="photosModalLabel">Add a photo</h4>
           </div>
@@ -107,8 +105,8 @@
               <%= f.file_field :image %>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <%= f.submit "Add a photo", class: 'btn btn-primary' %>
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+              <%= f.submit "Add a photo", class: "btn btn-outline-success" %>
             </div>
           <% end %>
         </div>
