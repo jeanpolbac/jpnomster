@@ -1,15 +1,27 @@
-<div class="booyah-box">
-  <div class="row">
-    <div class="col-4" id='logo'>
+<div class="booyah-box-user">
+  <div class="d-flex justify-content-center flex-column">
+    <div class="p-2" id="avatar">
       <%= image_tag 'user.png' %>
-      <br /><br />
-      <h2 style="font-size:4vw"><%= @user.email %></h2>
     </div>
-    <div class="col-8 text-right" id='member'>
-      <h3 style="font-size:3vw">Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
-      <hr class="grey" align="right" width="33%"/>
-      <h4 style="font-size:2vw"><%= @user.comments.count %> total comments</h4>
-      <h4 style="font-size:2vw"><%= @user.comments.where(rating: '5_stars').count %> total reviews</h4>
+    <div class="p-2">
+      <h2 class="text-center"><%= @user.email %></h2>
+    </div> 
+  </div>
+  <div class="d-flex justify-content-center flex-row">
+    <div class="mr-auto p-2">
+      <h5 id="membersince">Member Since:</h5>
+    </div>
+    <br />
+    <div class="ml-auto p-2">  
+      <h5><%= @user.comments.count %> total comments</h5>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center flex-row">
+    <div class="mr-auto p-2"> 
+      <h5 id="creationtime"><%= @user.created_at.strftime("%B %d, %Y") %></h5>
+    </div>
+    <div class="ml-auto p-2">
+      <h5 id="totalreviews"><%= @user.comments.where(rating: '5_stars').count %> total reviews</h5>
     </div>
   </div>
   <div class="clear"></div>
