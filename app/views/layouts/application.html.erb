@@ -8,7 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-	
+    <script type="text/javascript">
+      window.setTimeout(function() {
+        $(".alert").fadeTo(500, 0).slideUp(500, function() {
+          $(this).hide();
+        });
+      }, 1000);
+    </script> 
+
   </head>
 
   <body>
@@ -47,11 +54,19 @@
 		</div>
 	</nav>
 
-	<% if notice.present? %>
-		<p class="alert alert-info"><%= notice %></p>
-	<% end %>
+  <% if notice.present? %>
+		<div class="alert alert-info alert-dismissible fade show" role="alert" id="alertbanner"><%= notice %>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  <% end %>
 	<% if alert.present? %>
-		<p class="alert alert-danger"><%= alert %></p>
+		<div class="alert alert-danger alert-dismissible fade show" role="alert" id="alertbanner"><%= alert %>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
 	<% end %>
 
 	<%= yield %>
