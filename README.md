@@ -1,24 +1,27 @@
-# README
+# Nomster - Yelp Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.
 
-Things you may want to cover:
 
-* Ruby version
+### Prerequisites
 
-* System dependencies
+Ruby on Rails is required to be installed
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+## Deployment
 
-* How to run the test suite
+Use Git and GitHub for version control. User Heroku for deploying application.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Built With
 
-* Deployment instructions
+* [Ruby on Rails](https://guides.rubyonrails.org/) - The web framework used
 
-* ...
+
+
+## Authors
+
+
+* **Jean-Pol Bacquet** - *Assignment from UCF Web Boot Camp* - [Nomster - Yelp Clone](https://github.com/jeanpolbac/nomster-jp-bacquet)
+
+
