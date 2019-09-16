@@ -1,6 +1,9 @@
 # Nomster - Yelp Clone
-
+![Image of Nomster](app/assets/images/nomster-preview.png)
 A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.
+
+Preview:
+https://jpnomster.herokuapp.com
 
 
 ### Prerequisites
