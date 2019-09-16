@@ -85,7 +85,7 @@ gem 'simple_form'
 gem 'font-awesome-rails'
 
 # Integrate Devise for authentication
-gem 'devise', '~> 4.6', '>= 4.6.2'
+gem 'devise', '~> 4.7'
 
 # Integrate GeoCoder
 gem 'geocoder'
