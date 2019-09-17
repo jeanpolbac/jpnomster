@@ -5,21 +5,11 @@ A Yelp clone that integrates with the Google Maps API and includes features like
 Preview:
 https://jpnomster.herokuapp.com
 
-
-### Prerequisites
-
-Ruby on Rails is required to be installed
-
-
-
-## Deployment
-
-Use Git and GitHub for version control. User Heroku for deploying application.
-
-## Built With
-
+## Features
 * [Ruby on Rails](https://guides.rubyonrails.org/) - The web framework used
-
+* Mobile-responsive
+* User Authentication: Devise gem
+* Picture Uploads: Carrierwave and MiniMagick gems
 
 
 ## Authors
@@ -27,4 +17,5 @@ Use Git and GitHub for version control. User Heroku for deploying application.
 
 * **Jean-Pol Bacquet** - *Assignment from UCF Web Boot Camp* - [Nomster - Yelp Clone](https://github.com/jeanpolbac/nomster-jp-bacquet)
 
-
+## Credits
+* [UCF - Coding Bootcamp](https://bootcamp.ce.ucf.edu/coding/)
