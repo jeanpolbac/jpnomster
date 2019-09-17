@@ -6,15 +6,12 @@ Preview:
 https://jpnomster.herokuapp.com
 
 ## Features
-* [Ruby on Rails](https://guides.rubyonrails.org/) - The web framework used
-* Mobile-responsive
-* User Authentication: Devise gem
-* Picture Uploads: Carrierwave and MiniMagick gems
-
+* [Ruby on Rails](https://guides.rubyonrails.org/) - The web framework used.
+* Mobile-responsive.
+* User Authentication: Devise gem.
+* Picture Uploads: Carrierwave and MiniMagick gems.
 
 ## Authors
-
-
 * **Jean-Pol Bacquet** - *Assignment from UCF Web Boot Camp* - [Nomster - Yelp Clone](https://github.com/jeanpolbac/nomster-jp-bacquet)
 
 ## Credits
