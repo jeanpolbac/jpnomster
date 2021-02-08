@@ -94,7 +94,7 @@ gem 'geocoder'
 gem 'figaro'
 
 # Integrate CarrierWave
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 
 # Integrate Fog AWS
 gem 'fog-aws'
